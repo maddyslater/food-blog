@@ -17,16 +17,18 @@ function BlogCarousel(props) {
     return (
         <div className='blog-container'>
             <h1 className="blog-title">Places we've eaten!</h1>
-            <Carousel showThumbs={false} showArrows={true} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} >
+            <Carousel showArrows={true} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} >
                 {Object.entries(posts).map(([id, post]) => {
                     return (
                         <div key={id} >
-                            <NavLink className='blog-item' to={`posts/${post.id}`}>
+                            {/* <NavLink className='blog-item' to={`posts/${post.id}`}> */}
+                            <div className='blog-item'>
                                 <h2 className="blog-item-name">{post.name}</h2>
                                 <h2 className="blog-item-date">Date Eaten: {post.date}</h2>
                                 <h2 className="blog-item-rate">{post.rate}/10</h2>
                                 <p className="blog-item-description">Comments: {post.description}</p>
-                            </NavLink>
+                            {/* </NavLink> */}
+                            </div>
                         </div>
                 )
             })}

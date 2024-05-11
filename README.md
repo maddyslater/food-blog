@@ -1,8 +1,10 @@
-# React + Vite
+# DartGrub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description : 
+I designed a food blog specifically tailored for my friends and I to share our culinary experiences on campus. The platform allows us to post reviews and share ratings of our meals from various campus eateries. Each post includes detailed descriptions and personal ratings to help us decide where to eat next based on our collective experiences. This was my first time working with Firebase, so I wanted to challenge myself to utilize a variety of packages and functions!
 
-Currently, two official plugins are available:
+## Instructions :
+To run locally, `cd` into the directory and run `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Outside Resources:
+When starting this project, I had no prior experience working with external databases. I utilized a variety of the cs52 materials provided for me by Ryan Kim (goat) who helped explain some key concepts to me!

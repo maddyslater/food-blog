@@ -7,7 +7,8 @@ const Navigation = (props) => {
             <h3 className="nav-name">DartGrub</h3>
             <nav className="nav-pages">
                 <NavLink className='nav-link' to="/">Home</NavLink>
-                <NavLink className='nav-link' to="/Blog">Blog</NavLink>
+                <NavLink className='nav-link' to="/blogcarousel">Blog</NavLink>
+                <NavLink className='nav-link' to="/blogscroll">All Posts</NavLink>
                 <NavLink className='nav-link' to="/posts/new">Add Post</NavLink>
             </nav>
         </div>

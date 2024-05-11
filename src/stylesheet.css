@@ -91,6 +91,27 @@ body {
 
 /************BLOG SECTION************/
 
+.blog-all {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.blog-slide {
+    background-color: #C6E377;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 30vw;
+    height: 30vh;
+    border-radius: 40px;
+    margin: auto;
+    text-decoration: none;
+}
+
 .blog-container {
     height: 100vh;
     display: flex;
@@ -120,7 +141,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 70vw;
+    width: 70vw;
     height: 60vh;
     border-radius: 40px;
     margin: auto;
@@ -129,26 +150,22 @@ body {
 }
 
 .blog-item-name {
-    font-size: 8vw;
+    font-size: 7vw;
     color: black;
 }
 
 .blog-item-date {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .blog-item-rate {
-    font-size: 8vw;
+    font-size: 5vw;
     color: orange
 }
 
 .blog-item-description {
-    font-size: 4vw;
+    font-size: 3vw;
 }
-
-
-
-
 
 /************NEW POST SECTION************/
 
@@ -161,14 +178,13 @@ body {
     margin: auto;
     gap: 3vh;
 
-    padding-top: 5vh;
+    padding-top: 9vh;
 
 }
 
 .new-post-label {
-    font-size: 5vw;
     color: #36622B;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -185,6 +201,7 @@ button {
     height: 10%;
     display: inline-block;
     margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 #new-post-button {
@@ -195,6 +212,11 @@ button {
     font-size: 3vw;
     letter-spacing: 0.1em;
 }
+
+#new-post-button:hover {
+    background-color: #F2C18D;
+}
+
 
 .here {
     background-color: aqua;
