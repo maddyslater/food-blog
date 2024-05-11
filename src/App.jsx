@@ -1,31 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import './stylesheet.css'
-import { addPost } from './services/datastore'
+import { addPost, getPost } from './services/datastore'
+import Navigation from './components/navigation'
+import Home from './components/home'
+import Blog from './components/blog'
+import NewPost from './components/newpost'
+import Post from './components/post'
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const createNewPost = (event) => {
-    const fields = {
-      name: "Test1",
-    }
-    addPost(fields);
-    console.log('we made it');
-  }
-
   return (
-    <>
+    <BrowserRouter>
       <div>
-        <body>
-          <div className="home-container">
-            <h1 onClick={createNewPost} className="home-title">We're Hungry.</h1>
-            <h3 className="home-subtitle">Come along on our food adventures</h3>
-          </div>
-        </body>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/posts/new" element={<NewPost />} />
+          <Route path="/posts/:postId" element={<Post />} />
+          <Route path="*" element={<div>Post not found</div>} />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   )
 }
 

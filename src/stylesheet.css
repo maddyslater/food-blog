@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,27 +11,191 @@ html {
 }
 
 body {
-    background-color: grey; 
-    font-family: "Poppins", sans-serif;
-
+    color: black;
+    background-color: #FBFAD3;
+    font-family: "Francois One", "Sans Serif";
 }
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #C6E377;
+    font-size: 2em;
+    font-family: 'Luckiest Guy';
+    width: 100vw;
+    height: 7vh;
+    padding-top: 10px;
+    z-index: 1000;
+}
+
+.nav-name {
+    padding-left: 10%;
+    padding-right: 2vw;
+    color: #36622B;
+}
+
+.nav-name:hover {
+    color: #729D39;
+    scale: 1.2;
+}
+
+.nav-pages {
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav-link {
+    color: #729D39;
+    outline: 1px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #F2C18D;
+    scale: 1.2;
+}
+
+
+/************HOME SECTION************/
 
 .home-container {
     position: absolute;
     display: flex;
     flex-direction: column;
-
     width: 100%;
+    height: 100vh;
 }
 
 .home-title {
-    font-size: 7vw;
-    font-weight: bolder;
-    margin: auto;
+    font-size: 9vw;
+    font-family: 'Luckiest Guy';
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: 30vh
 }
 
 .home-subtitle {
     font-size: 4vw;
     font-weight: 300;
-    margin:auto;
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    margin-top: 5vh
+}
+
+/************BLOG SECTION************/
+
+.blog-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    
+    padding-top: 2vh;
+    gap: 5vh;
+}
+
+.blog-title {
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    font-size: 7vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color: #F2C18D;
+
+    padding-top: 5vh;
+}
+
+.blog-item {
+    position: relative;
+    background-color: #C6E377;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 70vw;
+    height: 60vh;
+    border-radius: 40px;
+    margin: auto;
+    text-decoration: none;
+    
+}
+
+.blog-item-name {
+    font-size: 8vw;
+    color: black;
+}
+
+.blog-item-date {
+    font-size: 4vw;
+}
+
+.blog-item-rate {
+    font-size: 8vw;
+    color: orange
+}
+
+.blog-item-description {
+    font-size: 4vw;
+}
+
+
+
+
+
+/************NEW POST SECTION************/
+
+#new-post-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 3vh;
+
+    padding-top: 5vh;
+
+}
+
+.new-post-label {
+    font-size: 5vw;
+    color: #36622B;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.new-post-input {
+    display: inline-block;
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+button {
+    width: 30%;
+    height: 10%;
+    display: inline-block;
+    margin-top: 4vh;
+}
+
+#new-post-button {
+    background-color: #729D39;
+    color: white;
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+}
+
+.here {
+    background-color: aqua;
 }
